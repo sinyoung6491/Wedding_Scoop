@@ -38,7 +38,7 @@ const ReviewMore = () => {
                 </div>
                 <img src={no_review} alt="" />
             </div>
-            <div className="review_bottom_btn_div">
+            <div className="review_bottom_btn_div" id='more_review_bottom_btn_div'>
                 <div className="add_review_div">
                     <img src={add_review_icon} alt="" />
                 </div>
