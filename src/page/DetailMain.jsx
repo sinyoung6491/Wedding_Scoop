@@ -54,7 +54,7 @@ const DetailMain = ({ type }) => {
         ))}
       </div>
       {selectedMenu === '정보' && <BottomInfo type={type} />}
-      {selectedMenu === '상세 가격' && <BottomDetailPrice />}
+      {selectedMenu === '상세 가격' && <BottomDetailPrice type={type}/>}
       {selectedMenu === '후기(99)' && (
         showMoreReview ? <ReviewMore /> : <BottomReview onMoreClick={() => setShowMoreReview(true)} />
       )}
