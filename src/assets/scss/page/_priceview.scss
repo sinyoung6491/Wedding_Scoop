@@ -1,0 +1,142 @@
+#more_price_view_wrap {
+    height: calc(100% + 160px);
+    background-color: var(--Grayscale-Background, #FAFAFA);
+
+    .type_div {
+        margin-top: 10px;
+        display: flex;
+
+        div {
+            display: flex;
+            height: 40px;
+            padding: 10px 16px;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 140%;
+            letter-spacing: -0.14px;
+        }
+
+        .select {
+            color: var(--Grayscale-Gray-700, #6A6868);
+        }
+
+        .no_select {
+            color: var(--Grayscale-Gray-300, #D0CECE);
+        }
+    }
+
+    .price_view_div {
+        padding: 20px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .price_view_one_div {
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid var(--Grayscale-Gray-200, #DFDEDE);
+
+            .top_div {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .left_div {
+                    display: flex;
+                    gap: 4px;
+
+                    div {
+                        padding: 2px 4px;
+                        border-radius: 6px;
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 140%;
+                    }
+
+                    .when {
+                        background: var(--Grayscale-Gray-200, #DFDEDE);
+                        color: var(--Grayscale-Gray-700, #6A6868);
+                    }
+
+                    .no_season {
+                        background: var(--Secondary-Secondary-200, #FFE5B6);
+                        color: var(--Secondary-Secondary-800, #664C1D);
+                    }
+
+                    .season {
+                        background: var(--Primary-Primary-200, #ACE8F1);
+                        color: var(--Primary-Primary-900, #09282C);
+                    }
+
+                    .option {
+                        background: var(--Aceent1-Accent-200, #FBCCC4);
+                        color: var(--Aceent1-Accent-900, #311A16);
+                    }
+
+                }
+
+                img {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+
+            .price_view_title {
+                margin-top: 1px;
+                color: var(--Grayscale-Gray-900, #232323);
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 150%;
+            }
+
+            .no_option_div {
+                margin-top: 20px;
+                margin-bottom: -12px;
+                text-align: center;
+
+                .no_option_text {
+                    color: var(--Grayscale-Gray-600, #8D8B8B);
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 140%;
+                }
+
+                img {
+                    width: 172px;
+                    mix-blend-mode: luminosity;
+                }
+            }
+
+            .option_div {
+                margin-top: 5px;
+
+                .option_type_div {
+                    border-bottom: 1px solid var(--Grayscale-Gray-100, #EFEFEF);
+                    display: flex;
+                    padding: 6px 0px;
+                    justify-content: space-between;
+                    align-items: center;
+                    div{
+                        color: var(--Grayscale-Gray-900, #232323);
+                        font-size: 12px;
+                        font-weight: 600;
+                        line-height: 140%;
+                        letter-spacing: -0.12px;
+                    }
+                }
+                #last{
+                    border-bottom: none;
+                    align-items: flex-start;
+                    .options_div{
+                        text-align: right;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

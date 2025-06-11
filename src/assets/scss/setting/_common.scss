@@ -1,0 +1,12 @@
+@import url("https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css");
+:root{
+    --mainfont:'SUIT Variable', sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-width: 340px;
+  max-width: 440px;
+  margin: 0 auto;
+  height: 100vh; 
+}

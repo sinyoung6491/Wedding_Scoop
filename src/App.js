@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{useState} from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import DetailMain from './page/DetailMain';
+import './assets/scss/style.scss';
+import MorePriceView from './page/MorePriceView';
 
-function App() {
+const App = () => {
+  //const [type, setType] = useState('');
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      <Routes>
+        <Route path='/hall' element={<DetailMain type="hall"/>}/>
+        <Route path='/studio' element={<DetailMain type="studio"/>}/>
+        <Route path='/dress' element={<DetailMain type="dress"/>}/>
+        <Route path='/makeup' element={<DetailMain type="makeup"/>}/>
+        <Route path='/price' element={<MorePriceView/>}/>
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App
