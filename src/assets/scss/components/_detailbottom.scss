@@ -512,6 +512,7 @@
 }
 
 .review_bottom_btn_div {
+    position: relative;
     max-width: 440px;
     min-width: 340px;
     width: 100%;
@@ -524,7 +525,7 @@
     }
 
     .add_review_div {
-        position: fixed;
+        position: absolute;
         bottom: 82px;
         right: 16px;
         display: flex;
