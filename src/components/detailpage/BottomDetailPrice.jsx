@@ -4,7 +4,7 @@ import DetailPriceHall from './hall/DetailPriceHall'
 import DetailPriceStudio from './studio/DetailPriceStudio'
 import DetailPriceDress from './dress/DetailPriceDress'
 import DetailPriceMakeup from './makeup/DetailPriceMakeup'
-import bottom_price_btn_self from '../../assets/img/detailpage/bottom_price_btn_self.svg'
+import balloon from '../../assets/img/detailpage/balloon.svg'
 import BottomBtn from './BottomBtn';
 
 const BottomDetailPrice = ({ type }) => {
@@ -18,7 +18,10 @@ const BottomDetailPrice = ({ type }) => {
         <div className='bottom_price_div'>
             {componentMap[type] || null}
             <div className="price_bottom_btn_div">
-                <img src={bottom_price_btn_self} alt="" />
+                <div className="img">
+                    <div className="top">직접 견적을 내볼 수 있어요!</div>
+                    <img src={balloon} alt="" className="balloon" />
+                </div>
                 <BottomBtn />
             </div>
         </div>

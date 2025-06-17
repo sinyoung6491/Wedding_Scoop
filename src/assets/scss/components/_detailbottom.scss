@@ -82,7 +82,6 @@
 .bottom_info {
     width: 100%;
     padding: 18px 16px;
-    margin-bottom: 148px;
 
     .info_title {
         color: var(--Grayscale-Gray-900, #232323);
@@ -325,19 +324,22 @@
     display: flex;
     flex-direction: column;
 
-    .detail_price_makeup_div{
+    .detail_price_makeup_div {
         margin-bottom: 141px;
     }
-    .detail_price_hall_div{
+
+    .detail_price_hall_div {
         margin-bottom: 141px;
     }
-    .detail_price_dress_div{
+
+    .detail_price_dress_div {
         margin-bottom: 141px;
     }
-    .detail_price_studio_div{
+
+    .detail_price_studio_div {
         margin-bottom: 141px;
     }
-    
+
 
     .default_info_title_div {
         margin-top: 0;
@@ -500,10 +502,27 @@
     bottom: 0;
     margin-left: -16px;
 
-    img {
+    .img {
         margin-left: calc(25% - 51px);
-        margin-bottom: -6px;
         width: 102px;
+        text-align: center;
+        height: 48px;
+
+        .top {
+            margin-bottom: -1px;
+            color: var(--Grayscale-Gray-900, #232323);
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 140%;
+            letter-spacing: -0.12px;
+            border-radius: 8px;
+            background: var(--Grayscale-White, #FDFDFD);
+            display: flex;
+            padding: 11px 10px 12px 10px;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 4px 4px 15px 0px rgba(1, 2, 3, 0.10);
+        }
     }
 }
 
@@ -515,10 +534,27 @@
     bottom: 0;
     margin-left: -16px;
 
-    img {
+    .img {
         margin-left: calc(75% - 74.5px);
-        margin-bottom: -6px;
         width: 149px;
+        text-align: center;
+        height: 48px;
+
+        .top {
+            margin-bottom: -1px;
+            color: var(--Grayscale-Gray-900, #232323);
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 140%;
+            letter-spacing: -0.12px;
+            border-radius: 8px;
+            background: var(--Grayscale-White, #FDFDFD);
+            display: flex;
+            padding: 11px 10px 12px 10px;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 4px 4px 15px 0px rgba(1, 2, 3, 0.10);
+        }
     }
 }
 
@@ -555,7 +591,8 @@
         }
     }
 }
-#more_review_bottom_btn_div{
+
+#more_review_bottom_btn_div {
     margin-left: -16px;
 }
 

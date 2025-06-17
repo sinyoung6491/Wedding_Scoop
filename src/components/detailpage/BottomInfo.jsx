@@ -11,7 +11,7 @@ import InfoHall from './hall/InfoHall'
 import InfoMakeup from './makeup/InfoMakeup'
 import InfoStudio from './studio/InfoStudio'
 import BottomBtn from './BottomBtn';
-import bottom_info_btn_price from '../../assets/img/detailpage/bottom_info_btn_price.svg'
+import balloon from '../../assets/img/detailpage/balloon.svg'
 
 const BottomInfo = ({ type }) => {
   const navigate = useNavigate();
@@ -91,7 +91,10 @@ const BottomInfo = ({ type }) => {
         </div>
       </div>
       <div className="info_bottom_btn_div">
-        <img src={bottom_info_btn_price} alt="" />
+        <div className="img">
+          <div className="top">가격이 다른가요?</div>
+          <img src={balloon} alt="" className="balloon" />
+        </div>
         <BottomBtn/>
       </div>
     </div>
