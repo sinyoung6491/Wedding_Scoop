@@ -1,14 +1,22 @@
-import React from 'react'
-import toggle from '../../../assets/img/detailpage/toggle.svg'
+import React, { useState } from 'react';
+import toggle_down from '../../../assets/img/detailpage/toggle_down.svg';
+import toggle_up from '../../../assets/img/detailpage/toggle.svg';
 
 const InfoDress = () => {
+
+    const [isOpen, setIsOpen] = useState(true);
+
+    const handleToggle = () => {
+        setIsOpen(!isOpen);
+    };
     return (
         <div className='info_dress_div'>
             <div>
-                <div className="default_info_title_div">
+                <div className="default_info_title_div" onClick={handleToggle}>
                     <div className="info_title">드레스 기본정보</div>
-                    <img src={toggle} className="toggle_icon" />
+                    <img src={isOpen ? toggle_up : toggle_down} className="toggle_icon" />
                 </div>
+                {isOpen && (
                 <div className="default_info_div">
                     <div className="default_detail_info_div">
                         <div className="default_info_title">토탈 선택</div>
@@ -38,7 +46,7 @@ const InfoDress = () => {
                         <div className="default_info_title">기타</div>
                         <div className="default_info">턱시도 포함</div>
                     </div>
-                </div>
+                </div>)}
             </div>
         </div>
     )

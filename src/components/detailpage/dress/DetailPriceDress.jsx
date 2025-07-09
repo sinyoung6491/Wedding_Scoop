@@ -1,10 +1,12 @@
 import React from 'react'
 import toggle from '../../../assets/img/detailpage/toggle.svg'
+import InfoDress from './InfoDress'
 
 const DetailPriceDress = () => {
     return (
         <div className='detail_price_dress_div'>
-            <div>
+            <InfoDress/>
+            {/* <div>
                 <div className="default_info_title_div">
                     <div className="info_title">드레스 기본정보</div>
                     <img src={toggle} className="toggle_icon" />
@@ -39,7 +41,7 @@ const DetailPriceDress = () => {
                         <div className="default_info">턱시도 포함</div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div>
                 <div className="default_info_title_div">
                     <div className="info_title">가격 정보</div>

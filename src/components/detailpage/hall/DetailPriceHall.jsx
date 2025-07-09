@@ -1,11 +1,13 @@
 import React from 'react'
 import toggle from '../../../assets/img/detailpage/toggle.svg'
+import InfoHall from './InfoHall'
 
 const DetailPriceHall = () => {
     return (
         <div className='detail_price_hall_div'>
             <div>
-                <div className="default_info_title_div">
+                <InfoHall/>
+                {/* <div className="default_info_title_div">
                     <div className="info_title">홀 기본정보</div>
                     <img src={toggle} className="toggle_icon" />
                 </div>
@@ -34,7 +36,7 @@ const DetailPriceHall = () => {
                         <div className="default_info_title">주차 형태</div>
                         <div className="default_info">주차 수용대수:150대<br />무료 (2시간) / 유료 (10분/700원)</div>
                     </div>
-                </div>
+                </div> */}
             </div>
             <div>
                 <div className="default_info_title_div">

@@ -1,10 +1,12 @@
 import React from 'react'
 import toggle from '../../../assets/img/detailpage/toggle.svg'
+import InfoMakeup from './InfoMakeup'
 
 const DetailPriceMakeup = () => {
     return (
         <div className='detail_price_makeup_div'>
-            <div>
+            <InfoMakeup/>
+            {/* <div>
                 <div className="default_info_title_div">
                     <div className="info_title">헤어/메이크업 기본정보</div>
                     <img src={toggle} className="toggle_icon" />
@@ -35,7 +37,7 @@ const DetailPriceMakeup = () => {
                         <div className="default_info">헤어변형 , 출장가능</div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div>
                 <div className="default_info_title_div">
                     <div className="info_title">가격 정보</div>
